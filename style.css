@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+:root {
+    --background: #FDF6EC;
+    --opBtn: #FCE0BF;
+    --numBtn: #F3E9DD;
+    --resBtn: #B7CADB;
+  }
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202020;
+}
+.container{
+    width: 466px;
+    height: 750px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--background);
+    border-radius: 12px;
+}
+#numField{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 96px;
+    text-align: end;
+    width: 90%;
+    color: #5D491D;
+}
+.row{
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.btn{
+    filter: drop-shadow(2px 4px 1px rgba(0, 0, 0, 0.25));
+    margin-right: 13px;
+}
+.op{
+    background-color: var(--opBtn);
+}
+.num{
+    background-color: var(--numBtn);
+}
+.res{
+    background-color: var(--resBtn);
+}
+.btnImg{
+    height: 32px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-text{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 900;
+}
+.smlBtn{
+    height: 87px;
+    width: 87px;
+    border-radius: 50px;
+}
+.longBtn{
+    height: 87px;
+    width: 187px;
+    border-radius: 50px;
+}
