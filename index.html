@@ -5,44 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/9eb15d5ffe.js" crossorigin="anonymous"></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
-        <h2 id="numField">
-            0
-        </h2>
-        <div class="row">
-            <div class="btn smlBtn op"><p class="btn-text">C</p></div>
-            <div class="btn longBtn op"><img class="btnImg" src="icons/delete-left-solid.svg"></div>
-            <div class="btn smlBtn op"><img class="btnImg" src="icons/divide-solid.svg"></div>
+        <div class="output">
+            <div class="prevNumber prevNumField" data-prevNumber></div>
+            <div class="curNumber numField" data-curNumber></div>
         </div>
         <div class="row">
-            <div class="btn smlBtn num"><p class="btn-text">7</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">8</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">9</p></div>
-            <div class="btn smlBtn op"><img class="btnImg" src="icons/xmark-solid.svg"></div>
+            <button class="btn smlBtn op" data-clear><p class="btn-text">C</p></button>
+            <button class="btn longBtn op" data-delete><i class="fa-solid fa-delete-left"></i></button>
+            <button class="btn smlBtn op" data-operation><i class="fa-solid fa-divide"></i></button>
         </div>
         <div class="row">
-            <div class="btn smlBtn num"><p class="btn-text">4</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">5</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">6</p></div>
-            <div class="btn smlBtn op"><img class="btnImg" src="icons/minus-solid.svg"></div>
+            <button class="btn smlBtn num" data-number><p class="btn-text">7</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">8</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">9</p></button>
+            <button class="btn smlBtn op" data-operation><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="row">
-            <div class="btn smlBtn num"><p class="btn-text">1</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">2</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">3</p></div>
-            <div class="btn smlBtn op"><img class="btnImg" src="icons/plus-solid.svg"></div>
+            <button class="btn smlBtn num" data-number><p class="btn-text">4</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">5</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">6</p></button>
+            <button class="btn smlBtn op" data-operation><i class="fa-solid fa-minus"></i></button>
         </div>
         <div class="row">
-            <div class="btn smlBtn num"><p class="btn-text">.</p></div>
-            <div class="btn smlBtn num"><p class="btn-text">0</p></div>
-            <div class="btn longBtn res"><img class="btnImg" src="icons/equals-solid.svg"></div>
+            <button class="btn smlBtn num" data-number><p class="btn-text">1</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">2</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">3</p></button>
+            <button class="btn smlBtn op" data-operation><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="row">
+            <button class="btn smlBtn num" data-number><p class="btn-text">.</p></button>
+            <button class="btn smlBtn num" data-number><p class="btn-text">0</p></button>
+            <button class="btn longBtn res" data-equals><i class="fa-solid fa-equals"></i></button>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

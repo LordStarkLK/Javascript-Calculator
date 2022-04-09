@@ -25,15 +25,32 @@ body{
     background: var(--background);
     border-radius: 12px;
 }
-#numField{
+.output{
+    height: 190px;
+}
+.numField{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 82px;
     line-height: 96px;
     text-align: end;
+    margin-bottom: 50px;
+    margin-top: 10px;
     width: 90%;
     color: #5D491D;
+    height: 20px;
+}
+.prevNumField{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65px;
+    text-align: end;
+    width: 90%;
+    color: #5D491D;
+    margin: 0%;
+    height: 10px;
 }
 .row{
     display: flex;
@@ -46,29 +63,31 @@ body{
 }
 .op{
     background-color: var(--opBtn);
+    font-size: 26px;
 }
 .num{
     background-color: var(--numBtn);
 }
 .res{
     background-color: var(--resBtn);
+    font-size: 26px;
 }
-.btnImg{
-    height: 32px;
-    top: 50%;
-    left: 50%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+button{
+    border: none;
+}
+button:hover{
+    border: #202020 solid 0.5px;
+}
+button:active{
+    zoom: 0.995;
 }
 .btn-text{
     margin: auto;
     text-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: relative; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     font-size: 36px;
     font-weight: 900;
 }
@@ -82,3 +101,11 @@ body{
     width: 187px;
     border-radius: 50px;
 }
+/* i {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
